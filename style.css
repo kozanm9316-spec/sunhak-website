@@ -1,0 +1,111 @@
+/* Import a cleaner, more modern prestigious font (EB Garamond) */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;600&display=swap');
+
+:root {
+    --accent-pink: #D67B92;   /* Used sparingly for elegance */
+    --paper-white: #FFFFFF;   /* Clean, modern slate */
+    --ink-black: #1A1A1B;     /* High-authority text */
+    --soft-gray: #F5F5F7;     /* Modern subtle backgrounds */
+    
+    --font-serif: 'EB Garamond', serif;
+    --font-sans: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--paper-white);
+    color: var(--ink-black);
+    line-height: 1.7;
+}
+
+/* Headings: EB Garamond is the peak of academic elegance */
+h1, h2, h3 {
+    font-family: var(--font-serif);
+    font-weight: 400; /* Lighter weight = more sophisticated */
+    letter-spacing: -0.02em;
+    color: var(--ink-black);
+}
+
+.navbar {
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--soft-gray);
+}
+
+.logo {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.nav-links a {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: var(--ink-black);
+}
+
+/* Hero: Focus on typography and space, not big blocks of color */
+.hero {
+    padding: 12rem 5%;
+    background-color: var(--paper-white);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    max-width: 850px;
+    margin: 0 auto 2rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    color: #555;
+    font-weight: 300;
+}
+
+/* Buttons: Minimalist and sharp */
+.btn-primary {
+    padding: 1rem 3rem;
+    background-color: var(--accent-pink);
+    color: var(--paper-white);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(#A65166);
+}
+
+/* Service Cards: No shadows, just thin hairlines */
+.service-card {
+    border: 1px solid #E1E1E1;
+    padding: 4rem 2rem;
+    background: transparent;
+    transition: border-color 0.4s ease;
+}
+
+.service-card:hover {
+    border-color: var(--accent-pink);
+    transform: none; /* No "bouncy" effects for prestige sites */
+}
+
+footer {
+    padding: 5rem 5%;
+    border-top: 1px solid var(--soft-gray);
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.1rem;
+}
