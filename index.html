@@ -18,13 +18,42 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Crafting Warm, Professional Digital Experiences.</h1>
-            <p>We build elegant solutions using earthy tones and modern design principles.</p>
-            <a href="#portfolio" class="btn-secondary">View Our Work</a>
+<section class="hero-carousel">
+    <div class="carousel-container">
+        <div class="slide active slide-1">
+            <div class="hero-content">
+                <h1>Excellence in Every Endeavor</h1>
+                <p>Developing the leaders of tomorrow through rigorous tradition.</p>
+                <a href="#" class="btn-primary">Apply Now</a>
+            </div>
         </div>
-    </section>
+
+        <div class="slide slide-2">
+            <div class="hero-content">
+                <h1>A Legacy of Innovation</h1>
+                <p>Where heritage meets the cutting edge of modern research.</p>
+                <a href="#" class="btn-primary">Explore Campus</a>
+            </div>
+        </div>
+
+        <div class="slide slide-3">
+            <div class="hero-content">
+                <h1>Global Perspectives</h1>
+                <p>Join a community representing over 60 nations worldwide.</p>
+                <a href="#" class="btn-primary">Our Community</a>
+            </div>
+        </div>
+    </div>
+
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    
+    <div class="carousel-dots">
+        <span class="dot active" onclick="currentSlideTo(0)"></span>
+        <span class="dot" onclick="currentSlideTo(1)"></span>
+        <span class="dot" onclick="currentSlideTo(2)"></span>
+    </div>
+</section>
 
     <section id="services" class="services">
         <h2>Our Expertise</h2>
@@ -47,5 +76,6 @@
     <footer>
         <p>&copy; 2026 Studio Terra. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
