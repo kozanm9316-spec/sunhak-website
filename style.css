@@ -127,12 +127,12 @@ h1, h2, h3 {
 /* Specific Slide Backgrounds */
 .slide-1 {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                      url('/images/facility.png');
+    url('/images/group-photo.jpg');
 }
 
 .slide-2 {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                      url('/images/group-photo.jpg');
+    url('/images/tparents\ gop.png');
 }
 
 .slide-3 {
@@ -248,6 +248,87 @@ h1, h2, h3 {
 .service-card:hover {
     border-color: var(--accent-pink);
     transform: none; /* No "bouncy" effects for prestige sites */
+}
+
+.welcome-section {
+    padding: 8rem 10%;
+    background-color: var(--soft-gray);
+    text-align: center; /* Centers the intro text */
+}
+
+.welcome-intro {
+    max-width: 800px;
+    margin: 0 auto 5rem auto;
+}
+
+.welcome-intro h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-intro .lead {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    color: #555;
+    font-style: italic;
+}
+
+/* The 3-Box Grid */
+.hanja-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.hanja-box {
+    background: var(--paper-white);
+    padding: 3rem 2rem;
+    border: 1px solid var(--light-pink);
+    border-top: 4px solid var(--accent-pink); /* Strong top accent line */
+    transition: all 0.4s ease;
+    text-align: left; /* Text inside boxes looks better left-aligned */
+}
+
+.hanja-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(214, 123, 146, 0.1);
+}
+
+.hanja {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    color: var(--accent-pink);
+    margin-bottom: 1rem;
+}
+
+.hanja-box h3 {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--ink-black);
+}
+
+.hanja-definition {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+    .hanja-grid {
+        grid-template-columns: 1fr; /* Stack boxes on small screens */
+        gap: 2rem;
+    }
+    
+    .welcome-section {
+        padding: 5rem 5%;
+    }
 }
 
 footer {
