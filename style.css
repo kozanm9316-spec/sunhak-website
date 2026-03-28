@@ -444,9 +444,90 @@ h1, h2, h3 {
     height: 1px;
     background-color: var(--light-pink);
 }
+.program-section {
+    padding: 8rem 10%;
+    background-color: var(--soft-gray);
+}
 
+.monthly-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    column-gap: 6rem;
+    row-gap: 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
+.month-card {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #E1E1E1; /* Subtle line above each entry */
+    padding-top: 1.5rem;
+}
 
+.month-head {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+
+.month-name {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-pink);
+}
+
+.month-head .dash {
+    height: 1px;
+    width: 30px;
+    background-color: var(--ink-black);
+}
+
+.month-body h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.month-body p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.month-body strong {
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--ink-black);
+    letter-spacing: 0.5px;
+}
+
+/* Responsive: Switch to one column on smaller screens */
+@media (max-width: 992px) {
+    .monthly-grid {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+}
+.faq-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Space between button and subtext */
+}
+
+.cta-subtext {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 400px;
+    line-height: 1.4;
+}
 footer {
     padding: 5rem 5%;
     border-top: 1px solid var(--soft-gray);
