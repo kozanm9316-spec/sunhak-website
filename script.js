@@ -28,3 +28,23 @@ function currentSlideTo(index) {
 setInterval(() => {
     moveSlide(1);
 }, 5000);
+
+// Intersection Observer for Scroll Animations
+const observerOptions = {
+    threshold: 0.2 // Trigger when 20% of the item is visible
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            // Once it's shown, we can stop observing it
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+// Target all timeline items with the 'reveal' class
+document.querySelectorAll('.reveal').forEach(item => {
+    observer.observe(item);
+});
