@@ -69,3 +69,11 @@ backToTopButton.addEventListener("click", () => {
         behavior: "smooth" // Creates a prestigious, slow glide back to the top
     });
 });
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});

@@ -26,13 +26,6 @@ h1, h2, h3 {
     color: var(--ink-black);
 }
 
-.navbar {
-    padding: 2rem 5%;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--soft-gray);
-}
-
 .logo {
     font-family: var(--font-serif);
     font-size: 1.5rem;
@@ -51,6 +44,64 @@ h1, h2, h3 {
     letter-spacing: 1.5px;
     font-weight: 500;
     color: var(--ink-black);
+}
+/* --- Sticky Navbar Base --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 90px; /* Tall and elegant at the start */
+    z-index: 1000;
+    background: transparent; /* Starts transparent over the hero */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    transition: all 0.4s cubic-bezier(0.2, 1, 0.3, 1);
+    box-sizing: border-box;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: #FFFFFF; /* White links to look good over hero images */
+    transition: color 0.3s ease;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+/* --- SCROLLED STATE (The "Following" Bar) --- */
+.navbar.scrolled {
+    height: 70px; /* Shrinks slightly */
+    background: rgba(255, 255, 255, 0.95); /* Becomes solid white/frosted */
+    backdrop-filter: blur(10px); /* Modern frosted glass effect */
+    box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+    padding: 0 5%;
+}
+
+.navbar.scrolled .logo,
+.navbar.scrolled .nav-links a {
+    color: var(--ink-black); /* Text turns dark when background turns white */
+}
+
+.nav-links a:hover {
+    color: var(--accent-pink);
 }
 
 #jp {
