@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鮮鶴 | GOP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+<header>
+    <nav class="navbar">
+        <div class="logo">鮮鶴韓国語学院</div>
+            <ul class="nav-links">
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#history">沿革</a></li>
+                <li><a href="#program-details">教育課程</a></li>
+                <li><a href="faq-jp.html">よくある質問</a></li>
+                <li class="lang-switch"><a href="index.html"><i class="fas fa-globe"></i> EN</a></li>
+            </ul>
+    </nav>
+</header>
+
+<div class="overlay"></div>
+
+<section class="hero-carousel">
+    <div class="carousel-container">
+        <div class="slide active slide-1">
+            <div class="hero-content">
+                <h1>今すぐ申し込む</h1>
+                <p>10ヶ月間の韓国語集中研修プログラム</p>
+                <a href="#" class="btn-primary">出願する</a>
+            </div>
+        </div>
+
+        <div class="slide slide-2">
+            <div class="hero-content">
+                <h1>創立44周年</h1>
+                <p>1982年より、次世代への韓国語教育を行っています。</p>
+                <a href="#" class="btn-primary">概要</a>
+            </div>
+        </div>
+
+        <div class="slide slide-3">
+            <div class="hero-content">
+                <h1>バイリンガルリーダーの育成</h1>
+                <a href="#" class="btn-primary">修了生の声</a>
+            </div>
+        </div>
+    </div>
+
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    
+    <div class="carousel-dots">
+        <span class="dot active" onclick="currentSlideTo(0)"></span>
+        <span class="dot" onclick="currentSlideTo(1)"></span>
+        <span class="dot" onclick="currentSlideTo(2)"></span>
+    </div>
+</section>
+
+ <section class="welcome-section">
+    <div class="welcome-intro">
+        <span class="sub-label">1982年創立</span>
+        <h2>鮮鶴へようこそ</h2>
+        <p class="lead">44年にわたり、韓国の地で次世代を育成しています。</p>
+    </div>
+
+    <div class="hanja-grid">
+        <div class="hanja-box">
+            <span class="hanja">愛天</span>
+            <h3>神様を愛する</h3>
+            <p class="hanja-definition">愛天（애천）：第一のモットー。天の父母様（神様）を愛し、侍ること。</p>
+        </div>
+
+        <div class="hanja-box">
+            <span class="hanja">愛國</span>
+            <h3>国を愛する</h3>
+            <p class="hanja-definition">愛國（애국）：第二のモットー。自分の国を愛し、奉仕すること。</p>
+        </div>
+
+        <div class="hanja-box">
+            <span class="hanja">愛人</span>
+            <h3>人類を愛する</h3>
+            <p class="hanja-definition">愛人（애인）：第三のモットー。すべての人類を自分の家族のように愛すること。</p>
+        </div>
+    </div>
+</section>
+
+<section id="history" class="history-section">
+    <div class="section-title">
+        <span class="sub-label">私たちの歩み</span>
+        <h2>44年にわたる韓国語教育</h2>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item reveal">
+            <div class="timeline-img">
+                <img src="images/tparents-history.jpg" alt="True Parents GOP">
+            </div>
+            <div class="timeline-content">
+                <span class="date">1982年</span>
+                <h3>創設</h3>
+                <p>真の御父母様による創設</p>
+            </div>
+        </div>
+
+        <div class="timeline-item reveal">
+            <div class="timeline-img">
+                <img src="images/facility.png" alt="Achasan Location">
+            </div>
+            <div class="timeline-content">
+                <span class="date">2016年</span>
+                <h3>天苑団地への移転</h3>
+                <p>現在の場所に移転し、天正宮博物館を望む環境となりました。</p>
+            </div>
+        </div>
+        <div class="timeline-item reveal">
+            <div class="timeline-img">
+            </div>
+            <div class="timeline-content">
+                <span class="date">2026年</span>
+                <h3>創立44周年を迎えて</h3>
+                <p>新型コロナウイルスの影響により一時的にオンラインで実施していましたが、GOPプログラムは再開され、現在44年目を迎えています。</p>
+            </div>
+        </div>
+    </div>
+    <div class="timeline-footer reveal">
+        <a href="#about" class="btn-primary">鮮鶴についてさらに詳しく</a>
+    </div>
+</section>
+
+<section id="program-details" class="program-details-section">
+    <div class="section-title reveal">
+        <span class="sub-label">教育課程</span>
+        <h2>見て、聞いて、触れる教育</h2>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-item reveal">
+            <div class="detail-header">
+                <span class="detail-number">01</span>
+                <h3>韓国語（한국어）</h3>
+            </div>
+            <p>カリキュラムは、全くの初心者から韓国の現地中学生レベルまで引き上げるように作成されています。韓国での進学を希望する方には、現地の中学校・高校への進学サポートも提供しています。</p>
+            <p><i>現地校での学習についての詳細は<a href="#school-transition">こちら</a>。</i></p>
+            <div class="detail-img">
+                <img src="images/korean-flag.svg" alt="Korean Language Class">
+            </div>
+        </div>
+
+        <div class="detail-item reveal">
+            <div class="detail-header">
+                <span class="detail-number">02</span>
+                <h3>基本的な1週間のスケジュール</h3>
+            </div>
+            <p>平日は午前中に授業、午後に自由時間、夜に自習時間があります。</p>
+            <p>自由時間には修練苑、運動場、または買い物に行きます。</p>
+            <p>週末はリラックスしたり、校外学習に出かけたり、寮でゆっくり過ごします。毎週日曜日は礼拝に参加します。</p>
+            <div class="detail-img">
+                <img src="images/sport-field.jpeg" alt="sport-field">
+            </div>
+        </div>
+
+        <div class="detail-item reveal">
+            <div class="detail-header">
+                <span class="detail-number">03</span>
+                <h3>毎月の校外学習</h3>
+            </div>
+            <p>鮮鶴での教育は教室にとどまりません。毎月の歴史的名所への校外学習を通じて、歴史を直接体験し、哲学や伝統を肌で感じることができます。</p>
+            <div class="detail-img">
+                <img src="images/hwaseong-fortress.jpg" alt="hwaseong-fortress">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="school-transition" class="transition-section">
+    <div class="section-title reveal">
+        <span class="sub-label">次のステップ（希望者のみ）</span>
+        <h2>韓国の現地校への進学</h2>
+    </div>
+
+    <div class="transition-container">
+        <div class="transition-info reveal">
+            <h3>進学サポート</h3>
+            <p>語学研修から韓国の正規課程への編入は大きなステップです。経験豊富なスタッフが、現地の中学校・高校への編入手続きを全面的にサポートします：</p>
+            <ul class="support-list">
+                <li>入学に必要な書類とビザの準備。</li>
+                <li>40年以上にわたる進学サポートの実績。</li>
+            </ul>
+        </div>
+
+        <div class="school-highlight reveal">
+            <div class="school-img-container">
+                <img src="images/sunjung campus.webp" alt="Cheongshim International Academy Campus">
+            </div>
+            <div class="school-card">
+                <span class="highlight-label">提携機関</span>
+                <h3>善正（ソンジョン）中学校・高等学校</h3>
+                <p>韓国の首都ソウルに位置し、本格的な現地学生の生活を体験できます。韓国人の友達を作り、大都市で生活し、他の兄弟姉妹と共に寮生活を送ります。</p>
+                <div class="school-tags">
+                    <span>ソウル</span>
+                    <span>中学校・高校</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="testimonials-section">
+    <div class="section-title reveal">
+        <span class="sub-label">コミュニティの声</span>
+        <h2>修了生の体験談</h2>
+    </div>
+
+    <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+            <div class="quote-icon">“</div>
+            <p class="testimonial-text">GOPは私にとって視野を広げ、人生を変えるような経験でした。間違いなく、私の思春期初期において最も大きな影響を与えた時間です。異国を肌で体験し、真の御父母様の教え、孝情の文化、そして韓国文化全体に触れることができました。10代として成長し、自分を見つめ直す時期にGOPに助けられたと心から感じており、誰にでもこのプログラムへの参加を強くお勧めします。</p>
+            <div class="testimonial-author">
+                <div class="author-info">
+                    <span class="author-name">Joshua Buergi</span>
+                    <span class="author-class">第37期生</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+            <div class="quote-icon">“</div>
+            <p class="testimonial-text">GOPプログラムを通じて韓国で学ぶことは素晴らしい経験でした！活気ある文化と親切な人々のおかげで、楽しく有意義な時間を過ごせました。生涯の友と出会い、貴重な学びを得ることができました。楽しく豊かな経験ができるこのプログラムを強くお勧めします！</p>
+            <div class="testimonial-author">
+                <div class="author-info">
+                    <span class="author-name">Kozan Morimoto</span>
+                    <span class="author-class">第38期生</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+            <div class="quote-icon">“</div>
+            <p class="testimonial-text">あのような若さで韓国に行くことは、刺激的であると同時に少し不安もありましたが、結果的に私の人生で最も思い出深い経験の一つになりました。同世代の仲間たちと学校に通い、寮生活を送ることで、人生において大切な多くの教訓を学びました。また、長年にわたって続く友情を築くことができ、この経験がさらに意味深いものになりました。参加を考えているすべての人に、このプログラムを強くお勧めします！</p>
+            <div class="testimonial-author">
+                <div class="author-info">
+                    <span class="author-name">Saki Miyagi</span>
+                    <span class="author-class">第36期生</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="section-title reveal">
+        <span class="sub-label">連絡先</span>
+        <h2>お問い合わせ</h2>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-form-wrapper reveal">
+            <form action="#" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="氏名" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="メールアドレス" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="メッセージ" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">送信</button>
+            </form>
+        </div>
+
+        <div class="contact-info reveal">
+            <div class="info-item">
+                <h3>所在地</h3>
+                <p>大韓民国 京畿道 加平郡<br>雪岳面</p>
+            </div>
+            <div class="info-item">
+                <h3>総合案内</h3>
+                <p>gopsunhak@gmail.com</p>
+            </div>
+            <div class="info-item">
+                <h3>SNS</h3>
+                <div class="social-links">
+                    <a href="http://instagram.com/gop.sunhak/">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer>
+        <p>&copy; 2026 鮮鶴韓国語学院（Sunhak Institute of Korean Studies）</p>
+    </footer>
+<button id="backToTop" title="トップへ戻る">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
+    </svg>
+</button>
+    <script src="script.js"></script>
+</body>
+</html>

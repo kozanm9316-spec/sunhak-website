@@ -106,6 +106,32 @@ h1, h2, h3 {
 .nav-links a:hover {
     color: var(--accent-pink);
 }
+/* Language Switch Styling */
+.lang-switch a {
+    font-weight: 600;
+    border: 1px solid var(--soft-gray);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled .lang-switch a {
+    border-color: var(--ink-black);
+}
+
+.lang-switch a:hover {
+    background-color: var(--accent-pink);
+    color: var(--paper-white) !important;
+    border-color: var(--accent-pink);
+}
+
+.lang-switch i {
+    font-size: 0.8rem;
+}
 
 #jp {
     font-size: 15px;
