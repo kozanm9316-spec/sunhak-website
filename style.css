@@ -605,13 +605,205 @@ h1, h2, h3 {
         row-gap: 3rem;
     }
 }
+
 .faq-cta {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem; /* Space between button and subtext */
 }
+.program-details-section {
+    padding: 10rem 10%;
+    background-color: var(--paper-white);
+}
 
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.detail-header {
+    margin-bottom: 1.5rem;
+}
+
+.detail-number {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent-pink);
+    margin-bottom: 0.5rem;
+}
+
+.detail-item h3 {
+    font-size: 1.8rem;
+    letter-spacing: -0.01em;
+}
+
+.detail-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.detail-item a {
+    text-decoration: none;
+    color: var(--accent-pink)
+}
+.detail-item {
+    border-top: 1px solid var(--ink-black);
+    padding-top: 2rem;
+    display: flex; /* New: enables flex alignment */
+    flex-direction: column; /* Stack children vertically */
+    height: 100%; /* Ensure all cards in a row have the same height */
+}
+
+.detail-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    flex-grow: 1; /* New: pushes everything below it to the bottom */
+}
+
+.detail-img {
+    width: 100%;
+    height: 220px; /* Fixed height for consistency */
+    overflow: hidden;
+    border: 1px solid var(--soft-gray);
+    margin-top: auto; /* New: ensures it sticks to the bottom */
+}
+
+.detail-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Prevents image stretching */
+}
+
+.detail-item:hover .detail-img img {
+    transform: scale(1.08);
+    filter: grayscale(0%);
+}
+
+/* Responsive Stack */
+@media (max-width: 992px) {
+    .details-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+.transition-section {
+    padding: 8rem 10%;
+    background-color: var(--soft-gray); /* Slight contrast from the white program section */
+}
+
+.transition-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.transition-info h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.support-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.support-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.support-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-pink);
+    font-weight: bold;
+}
+/* School Image Styling */
+.school-img-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid #E1E1E1;
+    border-bottom: none; /* Merges the image with the card below */
+}
+
+.school-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/* Subtle zoom effect when hovering over the school section */
+.school-highlight:hover .school-img-container img {
+    transform: scale(1.05);
+}
+
+/* Adjust the School Card to connect with the image */
+.school-card {
+    background: var(--paper-white);
+    padding: 3.5rem;
+    border: 1px solid #E1E1E1;
+    /* Remove the top border if you want the "merged" look */
+    /* border-top: none; */ 
+}
+
+.highlight-label {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-pink);
+    margin-bottom: 1rem;
+}
+
+.school-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.school-tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.school-tags span {
+    font-family: var(--font-sans);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border: 1px solid var(--soft-gray);
+    letter-spacing: 1px;
+    color: #888;
+}
+
+/* Responsive Logic */
+@media (max-width: 992px) {
+    .transition-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
 .cta-subtext {
     font-family: var(--font-serif);
     font-style: italic;
