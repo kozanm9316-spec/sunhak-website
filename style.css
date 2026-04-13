@@ -10,7 +10,10 @@
     --font-serif: 'EB Garamond', serif;
     --font-sans: 'Inter', sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px; /* Height of your navbar */
+}
 body {
     font-family: var(--font-sans);
     background-color: var(--paper-white);
@@ -216,7 +219,7 @@ h1, h2, h3 {
 /* Specific Slide Backgrounds */
 .slide-1 {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-    url('/images/group-photo.jpg');
+    url('/images/facility.png');
 }
 
 .slide-2 {
@@ -702,4 +705,96 @@ footer {
     font-family: var(--font-serif);
     font-style: italic;
     font-size: 1.1rem;
+}
+
+.faq-section {
+    padding: 10rem 10% 5rem 10%;
+    background-color: var(--paper-white);
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-category h3 {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-pink);
+    margin: 4rem 0 2rem 0;
+    border-bottom: 1px solid var(--soft-gray);
+    padding-bottom: 10px;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--soft-gray);
+    padding-bottom: 1.5rem;
+}
+
+.faq-question h4 {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    color: var(--ink-black);
+    margin-bottom: 1rem;
+    cursor: default;
+}
+
+.faq-answer p {
+    font-size: 1.05rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Hover effect to make it feel interactive */
+.faq-item:hover {
+    border-color: var(--accent-pink);
+}
+/* --- FAQ Page Specifics --- */
+.faq-page .navbar {
+    background-color: var(--paper-white) !important;
+    border-bottom: 1px solid var(--soft-gray);
+    height: 70px; /* Start at the compact size on sub-pages */
+}
+
+/* Force dark text for visibility on white background */
+.faq-page .navbar .logo,
+.faq-page .navbar .nav-links a {
+    color: var(--ink-black) !important;
+}
+
+/* Maintain the glass effect on scroll for the FAQ page */
+.faq-page .navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+}
+
+/* FAQ Content Layout */
+.faq-section {
+    padding: 10rem 10% 5rem 10%;
+    background-color: var(--paper-white);
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-category h3 {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-pink);
+    margin: 4rem 0 2rem 0;
+    border-bottom: 1px solid var(--soft-gray);
+    padding-bottom: 10px;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--soft-gray);
+    padding-bottom: 1.5rem;
 }
