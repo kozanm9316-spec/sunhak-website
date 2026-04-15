@@ -52,7 +52,7 @@
 
     <div class="contact-container">
         <div class="contact-form-wrapper reveal">
-            <form action="#" class="contact-form">
+            <form action="https://formspree.io/f/mwvapjan" method="POST" class="contact-form">
                 <div class="form-group">
                     <input type="text" name="name" placeholder="氏名" required>
                 </div>
@@ -63,7 +63,13 @@
                     <textarea name="message" rows="5" placeholder="メッセージ" required></textarea>
                 </div>
                 <button type="submit" class="btn-submit">送信</button>
+                <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
             </form>
+
+            <div>
+                <a href="./thanks.html">thanks</a>
+                <a href="./thanks-jp.html">jp</a>
+            </div>
         </div>
 
         <div class="contact-info reveal">
