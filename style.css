@@ -263,12 +263,12 @@ h1, h2, h3 {
 
 .slide-2 {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-    url('/images/tparents\ gop.png');
+    url('/images/world-garden.jpg');
 }
 
 .slide-3 {
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
-                      url('images/amy-smile.png');
+    url('images/classroom.jpg');
 }
 
 /* Optional: If 'contain' makes it too small, use a percentage */
